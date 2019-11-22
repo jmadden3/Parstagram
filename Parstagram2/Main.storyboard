@@ -179,14 +179,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="34"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPl-Ci-5Yf">
-                                                    <rect key="frame" x="16" y="7" width="135" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPl-Ci-5Yf">
+                                                    <rect key="frame" x="16" y="7" width="135" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.6381884510062158" green="0.66739371827411165" blue="0.65468136583083747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="cPl-Ci-5Yf" firstAttribute="centerY" secondItem="3Ou-HF-YVf" secondAttribute="centerY" id="1Hv-Eu-ysJ"/>
+                                                <constraint firstItem="cPl-Ci-5Yf" firstAttribute="top" secondItem="3Ou-HF-YVf" secondAttribute="topMargin" constant="-4" id="FLJ-ug-O7X"/>
                                                 <constraint firstItem="cPl-Ci-5Yf" firstAttribute="leading" secondItem="3Ou-HF-YVf" secondAttribute="leading" constant="16" id="Vrj-21-KcD"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -200,7 +202,7 @@
                     <navigationItem key="navigationItem" id="CCX-Y3-V4c">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="uOc-ID-Exr">
                             <connections>
-                                <action selector="onLogoutButton:" destination="dTB-AL-PoL" id="wDo-S5-S3d"/>
+                                <action selector="onLogoutButton:" destination="dTB-AL-PoL" id="XBX-fr-JWX"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="5kA-Jd-O4c">
