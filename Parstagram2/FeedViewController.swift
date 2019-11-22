@@ -68,6 +68,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         //create the comment
         
