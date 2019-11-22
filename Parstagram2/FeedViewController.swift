@@ -9,12 +9,14 @@
 import UIKit
 import Parse
 import AlamofireImage
+import Alamofire
 import MessageInputBar
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
     
     
     @IBOutlet weak var tableView: UITableView!
+    
     let commentBar = MessageInputBar()
     
     var showsCommentBar = false
@@ -24,6 +26,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var selectedPost: PFObject!
     
     override func viewDidLoad() {
+        DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
         super.viewDidLoad()
         
         commentBar.inputTextView.placeholder = "Add a Comment"
@@ -68,10 +71,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         //create the comment
         
@@ -124,11 +124,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.captionLabel.text = post["caption"] as! String
         
             let imageFile = post["image"] as! PFFileObject
-            let urlString = imageFile.url!
-            let url = URL(string: urlString)!
-        
-            cell.photoView.af_setImage(withURL: url)
-            
+                let urlString = imageFile.url!
+                let url = URL(string: urlString)!
+                cell.photoView.af_setImage(withURL: url)
             return cell
         } else if indexPath.row <= comments.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
