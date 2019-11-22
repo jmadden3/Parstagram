@@ -167,7 +167,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Pass the selected object to the new view controller.
     }
     */
-
     @IBAction func onLogoutButton(_ sender: Any) {
         
         PFUser.logOut()
