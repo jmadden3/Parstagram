@@ -2,7 +2,7 @@
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
@@ -12,12 +12,12 @@ The following **required** functionality is completed:
 - [ x] User can sign up to create a new account. (1pt)
 - [x ] User can log in. (1pt)
 - [ x] User can take a photo, add a caption, and post it to the server. (3pt)
-- [ ] User can view the last 20 posts. (4pts)
+- [x ] User can view the last 20 posts. (4pts)
 
 The following **bonus** features are implemented:
 
 - [x] User can pull to refresh. (1pt)
-- [ ] User can load past tweets infinitely. (2pts)
+- [ x] User can load past tweets infinitely. (2pts)
 
 ## Video Walkthrough
 
@@ -49,4 +49,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://recordit.co/9JzS9oP9bd.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/DNl33NiPq6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
